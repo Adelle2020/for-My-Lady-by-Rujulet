@@ -1596,22 +1596,23 @@ body {
   animation-play-state: paused !important;
 } /*# sourceMappingURL=main.css.map */
 
-#overlay {
-  position: fixed;
-  top: -15;
-  left: 0;
-  width: 2000px; /* ← important: lasă fundalul să fie mai mare decât viewport-ul */
-  height: 5000px; /* ← important: lasă fundalul să fie mai mare decât viewport-ul */
-  pointer-events: none; /* ← important: lasă fundalul interactiv, dacă e animat cu JS */
-  z-index: 10;
-}
+    /* Suprapunere text peste fundal */
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+      pointer-events: none;
+    }
 
 /* Titlul sus stânga */
 .titlu {
   position: absolute;
-  top: 20px;
-  left: 125px;
-  font-size: 28px;
+  top: 35px;
+  left: 80px;
+  font-size: 25px;
   background-color: rgba(0,0,0,0.5);
   padding: 10px 15px;
   border-radius: 6px;
@@ -1621,11 +1622,11 @@ body {
 /* Titlul sus stânga */
 .subtitlu {
   position: absolute;
-  top: 65px;
-  left: 210px;
+  top: 90px;
+  left: 160px;
   font-size: 13px;
   background-color: rgba(0,0,0,0.5);
-  padding: 10px 15px;
+  padding: 5px 5px;
   border-radius: 6px;
   color: white;
   pointer-events: auto;
@@ -1636,8 +1637,8 @@ body {
   font-family: 'Dancing Script', cursive;
   font-size: 13px;
   position:  relative;
-  top: 120px;
-  left: 100px;
+  top: 135px;
+  left: 50px;
   max-width: 275px;
   background-color: rgba(0,0,0,0.6);
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -1649,6 +1650,53 @@ body {
   -webkit-animation: bloom 2s ease-in-out forwards;
   animation: bloom 1.5s ease-in-out forwards;
 }
+
+/* Titlu dreapta */
+.titlu-dreapta {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  font-size: 25px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
+  pointer-events: auto;
+}
+
+/* Subtitlu dreapta */
+.subtitlu-dreapta {
+  position: absolute;
+  top: 90px;
+  right: 80px;
+  font-size: 13px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  pointer-events: auto;
+}
+
+.text-box-dreapta {
+  font-family: 'Dancing Script', cursive;
+  font-size: 13px;
+  position: absolute; /* <- cheia */
+  top: 135px;
+  right: 75px;         /* <- poziționează de la marginea dreaptă */
+  max-width: 275px;
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  pointer-events: auto;
+  z-index: 10;
+  text-align: left;
+  animation: bloom 1.5s ease-in-out forwards;
+}
+
+
+
 
 @keyframes bloom {
   0% {
