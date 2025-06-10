@@ -1601,6 +1601,8 @@ body {
       position: fixed;
       top: 0;
       left: 0;
+      right: 0;
+      bottom: 0;
       width: 100vw;
       height: 100vh;
       z-index: 10;
@@ -1610,7 +1612,7 @@ body {
 /* Titlul sus stânga */
 .titlu {
   position: absolute;
-  top: 35px;
+  top: 25px;
   left: 80px;
   font-size: 25px;
   background-color: rgba(0,0,0,0.5);
@@ -1620,9 +1622,9 @@ body {
   pointer-events: auto;
 }
 /* Titlul sus stânga */
-.subtitlu {
+.subtitlu-stanga {
   position: absolute;
-  top: 90px;
+  top: 80px;
   left: 160px;
   font-size: 13px;
   background-color: rgba(0,0,0,0.5);
@@ -1633,10 +1635,27 @@ body {
 }
 
 /* Casetă de text mai jos */
-.text-box {
+.text-box-stanga {
   font-family: 'Dancing Script', cursive;
   font-size: 13px;
   position:  relative;
+  top: 115px;
+  left: 50px;
+  max-width: 275px;
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  pointer-events: auto;
+  z-index: 10;
+  -webkit-animation: bloom 2s ease-in-out forwards;
+  animation: bloom 1.5s ease-in-out forwards;
+}
+.text-box-stanga2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 13px;
+  position:  absolute;
   top: 135px;
   left: 50px;
   max-width: 275px;
@@ -1654,7 +1673,7 @@ body {
 /* Titlu dreapta */
 .titlu-dreapta {
   position: absolute;
-  top: 35px;
+  top: 25px;
   right: 50px;
   font-size: 25px;
   background-color: rgba(0,0,0,0.5);
@@ -1667,7 +1686,7 @@ body {
 /* Subtitlu dreapta */
 .subtitlu-dreapta {
   position: absolute;
-  top: 90px;
+  top: 80px;
   right: 80px;
   font-size: 13px;
   background-color: rgba(0,0,0,0.5);
@@ -1681,8 +1700,8 @@ body {
   font-family: 'Dancing Script', cursive;
   font-size: 13px;
   position: absolute; /* <- cheia */
-  top: 135px;
-  right: 75px;         /* <- poziționează de la marginea dreaptă */
+  top: 115px;
+  right: 70px;         /* <- poziționează de la marginea dreaptă */
   max-width: 275px;
   background-color: rgba(0,0,0,0.6);
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -1695,8 +1714,37 @@ body {
   animation: bloom 1.5s ease-in-out forwards;
 }
 
+/* Butoane schimbare poezii */
+.buton-container {
+  position: fixed;
+  left: 43%;
+  top: -15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buton-container button {
+  margin: 0 10px;
+  padding: 5px 15px;
+  font-size: 15px;
+  border: none;
+  background-color: #3ba4ab;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buton-container button:hover {
+  background-color: #73d5e4;
+}
 
 
+
+
+
+.fade-out {
+  opacity: 0.2;
+}
 
 @keyframes bloom {
   0% {
