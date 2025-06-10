@@ -1639,7 +1639,7 @@ body {
   font-family: 'Dancing Script', cursive;
   font-size: 13px;
   position:  relative;
-  top: 115px;
+  top: 135px;
   left: 50px;
   max-width: 350px;
   background-color: rgba(0,0,0,0.6);
@@ -1659,7 +1659,7 @@ body {
   top: 135px;
   left: 50px;
   max-width: 275px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.162);
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   padding: 5px;
   border-radius: 10px;
@@ -1700,11 +1700,11 @@ body {
   font-family: 'Dancing Script', cursive;
   font-size: 13px;
   position: absolute; /* <- cheia */
-  top: 115px;
+  top: 135px;
   right: 70px;         /* <- poziționează de la marginea dreaptă */
-  max-width: 275px;
-  background-color: rgba(0,0,0,0.6);
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  max-width: 300px;
+  background-color: rgba(0, 0, 0, 0.322);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.315);
   padding: 5px;
   border-radius: 10px;
   color: white;
