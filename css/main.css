@@ -1733,6 +1733,18 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+.love-text-box{
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 45px;
+  font-size: 23px;
+  color: #80dfee;
+  font-weight: bold;
+  text-align: center;
+  background-color: #010a0ab4;
+  max-width: 850px;
+}
 
 .buton-container button:hover {
   background-color: #73d5e4;
